@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import Navbar from "./components/Navbar";
+
+import New from "./pages/New";
+import CoolGadgets from "./pages/CoolGadgets";
+import Geek from "./pages/Geek";
+import GamerGifts from "./pages/GamerGift";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+
+      <Routes>
+        {/* Redirect root to /new */}
+        <Route path="/" element={<Navigate to="/new" replace />} />
+
+        <Route path="/new" element={<New />} />
+        <Route path="/cool-gadgets" element={<CoolGadgets />} />
+        <Route path="/geek" element={<Geek />} />
+        <Route path="/gamer-gifts" element={<GamerGifts />} />
+      </Routes>
+    </Router>
   );
 }
 

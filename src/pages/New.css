@@ -1,11 +1,15 @@
-body {
-  background-color: #f4f4f4;
-}
-
-.product-container {
+.new-page {
   width: 90%;
   margin: 40px auto;
+}
+
+.page-title {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.products-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 per row */
-  gap: 20px;
+  gap: 25px;
 }

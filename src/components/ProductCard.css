@@ -1,0 +1,74 @@
+.product-card {
+  position: relative;
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Discount Badge */
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #cc0c39; /* Amazon red */
+  color: white;
+  padding: 5px 8px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+/* Price Section */
+.price-section {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 14px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #111;
+}
+
+button {
+  background-color: #2f89c7;
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #1f6fa7;
+}
+.amazon-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #ff9900;
+  color: #111;
+  text-decoration: none;
+  padding: 8px 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.amazon-btn:hover {
+  background-color: #e68a00;
+}
+
