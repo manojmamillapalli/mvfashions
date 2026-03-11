@@ -11,18 +11,29 @@
   transform: translateY(-5px);
 }
 
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
 /* Discount Badge */
 .discount-badge {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  background-color: #cc0c39; /* Amazon red */
+  top: 8px;
+  right: 8px;   /* moved to right corner */
+  background-color: #cc0c39;
   color: white;
   padding: 5px 8px;
   font-size: 13px;
   font-weight: bold;
   border-radius: 3px;
 }
+
 
 /* Price Section */
 .price-section {
@@ -70,5 +81,38 @@ button:hover {
 
 .amazon-btn:hover {
   background-color: #e68a00;
+}
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.product-card h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Small devices */
+@media (min-width: 576px) {
+  .product-card h3 {
+    font-size: 18px;
+  }
+}
+
+/* Large devices */
+@media (min-width: 992px) {
+  .product-card h3 {
+    font-size: 20px;
+  }
+
+  .price {
+    font-size: 22px;
+  }
 }
 

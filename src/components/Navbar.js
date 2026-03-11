@@ -5,6 +5,7 @@ import "./Navbar.css";
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [mobileMenu, setMobileMenu] = useState(false); // NEW
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,7 +19,7 @@ const Navbar = () => {
   return (
     <div className={`navbar ${scrolled ? "scrolled" : ""}`}>
 
-      {/* ===== TOP BAR ===== */}
+      {/* TOP BAR */}
       <div className="top-bar">
         <div className="social-links">
           <span>facebook</span>
@@ -33,16 +34,27 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* ===== LOGO ===== */}
-      <div className="logo">
-        AWE$OME STUFF TO BUY
+      {/* NAV HEADER (Logo + Hamburger) */}
+      <div className="nav-header">
+        <div className="logo">
+          AWE$OME STUFF TO BUY
+        </div>
+
+        {/* Hamburger */}
+        <div
+          className={`hamburger ${mobileMenu ? "active" : ""}`}
+          onClick={() => setMobileMenu(!mobileMenu)}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
 
-      {/* ===== MENU ===== */}
-      <div className="menu">
-        <Link to="/new">NEW</Link>
+      {/* MENU */}
+      <div className={`menu ${mobileMenu ? "open" : ""}`}>
+        <Link to="/new" onClick={() => setMobileMenu(false)}>NEW</Link>
 
-        {/* Dropdown */}
         <div
           className="dropdown"
           onMouseEnter={() => setDropdown(true)}
@@ -66,12 +78,12 @@ const Navbar = () => {
           )}
         </div>
 
-        <Link to="/cool-gadgets">COOL GADGETS</Link>
-        <Link to="/gamer-gifts">GAMER GIFTS</Link>
-        <Link to="/geek">GEEK</Link>
-        <Link to="/funny">FUNNY</Link>
-        <Link to="/office">OFFICE</Link>
-        <Link to="/under-25">UNDER ₹2000</Link>
+        <Link to="/cool-gadgets" onClick={() => setMobileMenu(false)}>COOL GADGETS</Link>
+        <Link to="/gamer-gifts" onClick={() => setMobileMenu(false)}>GAMER GIFTS</Link>
+        <Link to="/geek" onClick={() => setMobileMenu(false)}>GEEK</Link>
+        <Link to="/funny" onClick={() => setMobileMenu(false)}>FUNNY</Link>
+        <Link to="/office" onClick={() => setMobileMenu(false)}>OFFICE</Link>
+        <Link to="/under-25" onClick={() => setMobileMenu(false)}>UNDER ₹2000</Link>
       </div>
 
     </div>

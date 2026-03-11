@@ -8,8 +8,43 @@
   font-size: 28px;
 }
 
+.new-page {
+  width: 95%;
+  margin: 30px auto;
+}
+
+/* Default = Extra Small (mobile first) */
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 per row */
-  gap: 25px;
+  grid-template-columns: 1fr; /* 1 per row */
+  gap: 20px;
 }
+
+/* Small devices (≥576px) */
+@media (min-width: 576px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Medium devices (≥768px) */
+@media (min-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Large devices (≥992px) */
+@media (min-width: 992px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Extra Large devices (≥1200px) */
+@media (min-width: 1200px) {
+  .products-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+

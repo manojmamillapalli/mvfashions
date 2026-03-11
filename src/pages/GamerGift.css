@@ -1,0 +1,49 @@
+/* ===== GAMER GIFT PAGE ===== */
+
+.gamer-page {
+  width: 95%;
+  margin: 30px auto;
+}
+
+/* Optional page title styling */
+.gamer-title {
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Mobile First */
+.gamer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* Small devices (≥576px) */
+@media (min-width: 576px) {
+  .gamer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Medium devices (≥768px) */
+@media (min-width: 768px) {
+  .gamer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Large devices (≥992px) */
+@media (min-width: 992px) {
+  .gamer-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Extra Large devices (≥1200px) */
+@media (min-width: 1200px) {
+  .gamer-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

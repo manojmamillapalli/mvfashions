@@ -9,3 +9,12 @@ body {
   grid-template-columns: repeat(3, 1fr); /* 3 per row */
   gap: 20px;
 }
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+

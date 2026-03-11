@@ -18,13 +18,14 @@ const ProductCard = ({
   return (
     <div className="product-card">
 
-      {calculatedDiscount && (
-        <div className="discount-badge">
-          -{calculatedDiscount}%
-        </div>
-      )}
-
-      <img src={image} alt={title} />
+     <div className="image-container">
+  {calculatedDiscount && (
+    <div className="discount-badge">
+      -{calculatedDiscount}%
+    </div>
+  )}
+  <img src={image} alt={title} />
+</div>
 
       <h3>{title}</h3>
       <p>{description}</p>
