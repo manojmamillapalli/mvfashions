@@ -9,10 +9,6 @@ import outfit3 from "../components/outfit3.webp";
 import casual1 from "../components/casual1.webp";
 import casual2 from "../components/casual2.webp";
 import casual3 from "../components/casual3.webp";
-import casual4 from "../components/casual4.webp";
-import casual5 from "../components/casual5.webp";
-import casual6 from "../components/casual6.webp";
-import casual7 from "../components/casual7.webp";
 const Men = () => {
   const menProducts = [
     {
@@ -65,76 +61,37 @@ const Men = () => {
            discountPercent: 78,
             affiliateLink: "https://amzn.to/4b9T78X"
     },
-    {
+     {
       id: 6,
       image: casual1,
-       title: "Pinkmint Men's Solid Shirt | Soft Cotton Blend | Casual Shirt | Plain | Full Sleeve - Regular Fit (Available in Plus Size)",
-           description: "Pinkmint Men's Solid Shirt | Soft Cotton Blend | Casual Shirt | Plain | Full Sleeve - Regular Fit (Available in Plus Size)",
-          price: 449,
-           originalPrice: 1999,
-           discountPercent: 78,
-            affiliateLink: "https://amzn.to/4b9T78X"
+       title: "Premium Men's Casual Cotton Denim Shirt (Regular Fit)",
+           description: "Symbol Premium Men's Casual Cotton Denim Shirt (Regular Fit)",
+          price: 1499,
+           originalPrice: 2699,
+           discountPercent: 48,
+            affiliateLink: "https://amzn.to/3MWgsDa"
     },
-    {
+     {
       id: 7,
       image: casual2,
-       title: "Pinkmint Men's Solid Shirt | Soft Cotton Blend | Casual Shirt | Plain | Full Sleeve - Regular Fit (Available in Plus Size)",
-           description: "Pinkmint Men's Solid Shirt | Soft Cotton Blend | Casual Shirt | Plain | Full Sleeve - Regular Fit (Available in Plus Size)",
+       title: "IndoPrimo Men’s Stylish Satin Shirt for Party, Formal, Daily and Casual Wear Full Sleeve Shirt for Men",
+           description: "IndoPrimo Men’s Stylish Satin Shirt for Party, Formal, Daily and Casual Wear Full Sleeve Shirt for Men",
           price: 449,
            originalPrice: 1999,
-           discountPercent: 78,
-            affiliateLink: "https://amzn.to/4b9T78X"
+           discountPercent: 75,
+            affiliateLink: "https://amzn.to/4bp6Etu"
     },
-    {
+     {
       id: 8,
       image: casual3,
-       title: "Pinkmint Men's Solid Shirt | Soft Cotton Blend | Casual Shirt | Plain | Full Sleeve - Regular Fit (Available in Plus Size)",
-           description: "Pinkmint Men's Solid Shirt | Soft Cotton Blend | Casual Shirt | Plain | Full Sleeve - Regular Fit (Available in Plus Size)",
-          price: 449,
-           originalPrice: 1999,
-           discountPercent: 78,
-            affiliateLink: "https://amzn.to/4b9T78X"
-    },
-    {
-      id: 9,
-      image: casual4,
-       title: "Pinkmint Men's Solid Shirt | Soft Cotton Blend | Casual Shirt | Plain | Full Sleeve - Regular Fit (Available in Plus Size)",
-           description: "Pinkmint Men's Solid Shirt | Soft Cotton Blend | Casual Shirt | Plain | Full Sleeve - Regular Fit (Available in Plus Size)",
-          price: 449,
-           originalPrice: 1999,
-           discountPercent: 78,
-            affiliateLink: "https://amzn.to/4b9T78X"
-    },
-    {
-      id: 10,
-      image: casual5,
-       title: "Pinkmint Men's Solid Shirt | Soft Cotton Blend | Casual Shirt | Plain | Full Sleeve - Regular Fit (Available in Plus Size)",
-           description: "Pinkmint Men's Solid Shirt | Soft Cotton Blend | Casual Shirt | Plain | Full Sleeve - Regular Fit (Available in Plus Size)",
-          price: 449,
-           originalPrice: 1999,
-           discountPercent: 78,
-            affiliateLink: "https://amzn.to/4b9T78X"
-    },
-    {
-      id: 11,
-      image: casual6,
-       title: "Pinkmint Men's Solid Shirt | Soft Cotton Blend | Casual Shirt | Plain | Full Sleeve - Regular Fit (Available in Plus Size)",
-           description: "Pinkmint Men's Solid Shirt | Soft Cotton Blend | Casual Shirt | Plain | Full Sleeve - Regular Fit (Available in Plus Size)",
-          price: 449,
-           originalPrice: 1999,
-           discountPercent: 78,
-            affiliateLink: "https://amzn.to/4b9T78X"
-    },
-    {
-      id: 12,
-      image: casual7,
-       title: "Pinkmint Men's Solid Shirt | Soft Cotton Blend | Casual Shirt | Plain | Full Sleeve - Regular Fit (Available in Plus Size)",
-           description: "Pinkmint Men's Solid Shirt | Soft Cotton Blend | Casual Shirt | Plain | Full Sleeve - Regular Fit (Available in Plus Size)",
-          price: 449,
-           originalPrice: 1999,
-           discountPercent: 78,
-            affiliateLink: "https://amzn.to/4b9T78X"
+       title: "7-DAYS Premium Men's Formal Shirts – Cotton, Self-Design, Full Sleeve, Regular Fit, with Pocket, Stylish Office Shirts for Men",
+           description: "7-DAYS Premium Men's Formal Shirts – Cotton, Self-Design, Full Sleeve, Regular Fit, with Pocket, Stylish Office Shirts for Men",
+          price: 999,
+           originalPrice: 2250,
+           discountPercent: 56,
+            affiliateLink: "https://amzn.to/4uqA2rY"
     }
+    
   ];
 
   return (
